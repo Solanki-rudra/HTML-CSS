@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 10vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav>ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+a:hover{
+    color: orange;
+}
+.search-wraper{
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.071);
+    width: 60px;
+    height: 60px;
+}
+svg{
+    width: 90%;
+    height:90%;
+}
+.drop-menu-wrap,.sub-drop-menu-wrap,.super-supdrop{
+    list-style-type: none;
+    width: 12%;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+}
+.sub-drop-menu-wrap{
+    position: absolute;
+    width: 100%;
+}
+.super-supdrop{
+    width: 100%;
+}
+.drop-menu-wrap>li,.sub-drop-menu-wrap>li,.super-supdrop>li{
+    border-bottom: 1px solid rgba(135, 134, 134, 0.258);
+    background-color: rgba(200, 197, 197, 0.048);
+    font-size: 16px;
+    padding: 10px;
+}
+.drop-menu-wrap>li:hover{
+    color: orange;
+}
+nav>ul>li:nth-child(2):hover>.drop-menu-wrap{
+    display: block;
+}
+.sub-drop-menu-wrap{
+    left: 100%;
+    top: 0%;
+}
+.super-supdrop{
+    top: 0%;
+    display: none;
+    left: 100%;
+}
+.drop-menu-wrap>li:first-child:hover>.sub-drop-1{
+    display: block;
+}
+.m-level-3-1:hover>.ss-drop-1{
+    display: block;
+}
+.sub-drop-2{
+    top: 12.25%;
+}
+.ss-drop-2{
+    top: 0%;
+}
+.drop-menu-wrap>li:nth-child(2):hover>.sub-drop-2{
+    display: block;
+}
+.m-level-3-2:hover>.ss-drop-2{
+    display: block;
+}
+.sub-drop-3{
+    top: 24.25%;
+}
+.ss-drop-3{
+    top:0%;
+}
+.drop-menu-wrap>li:nth-child(3):hover>.sub-drop-3{
+    display: block;
+}
+.m-level-3-3:hover>.ss-drop-3{
+    display: block;
+}
+.mega-menu-2-container{
+    display: flex;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    width: 97%;
+    margin: auto;
+    box-shadow: 3px 3px 20px 10px rgba(128, 128, 128, 0.225);
+    display: none;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px 20px;
+    border: 1px solid gray;
+}
+.item li{
+    list-style-type: none;
+    margin-block: 20px;
+}
+.item>h3{
+    margin-block: 5px;
+}
+nav>ul>li:nth-child(4):hover>.mega-menu-2-container{
+    display: flex;
+}

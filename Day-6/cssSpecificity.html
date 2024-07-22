@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* in this case point is 0(universal selectors) */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            /* in this case Points give 1(element(h1)) */
+            font-size: 40px;
+        }
+        p#Par{
+            /* in this points give 1(elemnt(p)) + 100(id(Par)) = 101 */
+            color: brown;
+        }
+        #Par{
+            /* in this case point is 100(id(Par)) */
+            color: aquamarine ;
+        }
+        #Par{
+            /* in this case point is 100(id(Par)) + 10000(important) */
+            color: bisque !important ;
+        }
+        input[type='text']{
+            /* in this case point is 10(attribute(text)) */
+            width: 40%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 >Hello</h1>
+    <h1 style="color: blueviolet;">
+        <!-- in this case point is 1000(inline) + 1(element(h1)) = 1001 -->
+        world</h1>
+    <h2 class="heading2">namaste</h2>
+    <p id="Par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, id.</p>
+    <p style="color: blue;">this is inline</p>
+    <input type="text" name="" placeholder="enter name" id="">
+</body>
+</html>

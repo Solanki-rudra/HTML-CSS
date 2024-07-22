@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+    <!-- <link rel="stylesheet" href="./task-1.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#111827;
+    color: white;
+    font-family: sans-serif;
+    padding: 50px 20px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.heading-container{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+h4{
+    font-size: 12px;
+}
+.blue-text{
+    color: #6366F1;
+}
+h1{
+    margin: 15px;
+    font-size: 35px;
+}
+.heading-container>p{
+    font-size: 15px;
+    color: rgb(203, 201, 201) ;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+}
+.duration-buttons{
+    background-color: #1D2432;
+    padding: 5px;
+    border-radius: 20px;
+    width: fit-content;
+    margin:20px auto;
+}
+.duration-buttons>button,.card-2-head-wrap>button{
+    border: none;
+    padding:5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: #6366F1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.duration-buttons>button:Last-child{
+    background-color: transparent;
+}
+.duration-buttons>button:last-child:hover{
+    background-color: #6366F1;
+}
+.plans-container{
+    padding: 30px;
+}
+.plans-item-wraper{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.card{
+    border: 1px solid rgba(128, 128, 128, 0.382);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+h3{
+    margin-block: 10px;
+}
+.card>p{
+    font-size: 14px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+p>span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.card>button{
+    padding: 10px;
+    background-color: #283041;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.plan-benefit-list{
+    padding: 10px 0;
+}
+.plan-benefit-list>ul>li{
+    list-style-type: none;
+    margin: 15px 0;
+    font-size: 14px;
+}
+li>span{
+    padding-right: 10px;
+}
+.card-2{
+    border: 2px solid #6366F1;
+}
+.card-2>button{
+    background-color: #6366F1;
+}
+.card-2-head-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-2-head-wrap>button{
+    height: fit-content;
+}
+@media (max-width:1200px) {
+    .plans-item-wraper{
+        width: 95%;
+    }
+}
+@media (max-width:1100px) {
+    .plans-item-wraper{
+        width: 100%;
+    }
+    .card{
+        min-width: fit-content;
+    }
+}
+@media (max-width:963px) {
+    .plans-item-wraper{
+        width: 80%;
+    }
+    .heading-container>p{
+        width: 90%;
+    }
+}
+@media (max-width:554px) {
+    .plans-item-wraper{
+        width: 100%;
+    }
+    .heading-container{
+        width: 90%;
+    }
+}
+@media (max-width:332px){
+    .plans-container{
+        padding: 0;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .heading-container>p{
+        font-size: 12px;
+        line-height: 13px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading-container">
+            <h4 class="blue-text">Pricing</h4>
+            <h1>Pricing plans for teams of all sizes</h1>
+            <p>Lorem ips hic laboriosam, quidem sequi eius reiciendis, molestias libero dolorum neque. Libero, quaerat a quis doloribus?</p>
+        </div>
+        <div class="plans-container">
+            <div class="duration-buttons">
+                <button>Monthly</button>
+                <button>Annually</button>
+            </div>
+            <div class="plans-item-wraper">
+                <div class="card">
+                    <h3>Freelancer</h3>
+                    <p>Lorem ipsum dolor sit elit. Assumenda, quisquam!</p>
+                    <p><span>$15</span>/month</p>
+                    <button>Buy Plan</button>
+                    <div class="plan-benefit-list">
+                        <ul>
+                            <li><span>✓</span>5 Products</li>
+                            <li><span>✓</span>Up to 1,000 subscribers</li>
+                            <li><span>✓</span>Basic analytics</li>
+                            <li><span>✓</span>48-hour support response time</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-2-head-wrap">
+                        <h3>Startup</h3>
+                        <button>Most popular</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit elit. Assumenda, quisquam!</p>
+                    <p><span>$30</span>/month</p>
+                    <button>Buy Plan</button>
+                    <div class="plan-benefit-list">
+                        <ul>
+                            <li><span>✓</span>5 Products</li>
+                            <li><span>✓</span>Up to 1,000 subscribers</li>
+                            <li><span>✓</span>Basic analytics</li>
+                            <li><span>✓</span>48-hour support response time</li>
+                            <li><span>✓</span>Marketing automations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Enterprise</h3>
+                    <p>Lorem ipsum dolor sit elit. Assumenda, quisquam!</p>
+                    <p><span>$48</span>/month</p>
+                    <button>Buy Plan</button>
+                    <div class="plan-benefit-list">
+                        <ul>
+                            <li><span>✓</span>5 Products</li>
+                            <li><span>✓</span>Up to 1,000 subscribers</li>
+                            <li><span>✓</span>Basic analytics</li>
+                            <li><span>✓</span>48-hour support response time</li>
+                            <li><span>✓</span>Marketing automations</li>
+                            <li><span>✓</span>Custom reporting tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

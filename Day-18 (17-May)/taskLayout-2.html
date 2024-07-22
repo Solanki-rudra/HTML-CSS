@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskLayout-2</title>
+    <style> 
+     *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }       
+    body{
+          font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(239, 239, 189);
+    } 
+    .solutionWraper{
+        background-color: antiquewhite;
+        border: 8px solid white;
+        margin:40px 8px;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+    }
+    .solutionHead{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .solutionHead>p{
+        margin: 20px;
+        font-size: 13px;
+        color: gray;
+        font-weight: 600;
+    }
+    .solutionContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .solutions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        max-width: 20%;
+    }
+    .solutions>img{
+        border-radius: 50%;
+        width: 100px;
+        margin: 15px;
+    }
+    .solutions>h1{
+        font-size: 17px;
+        margin: 15px;
+        text-align: center;
+    }
+    .solutions>p{
+        text-align: center;
+        font-size: 15px;
+        color:gray;
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+   <main>
+    <div class="solutionWraper">
+        <div class="solutionHead">
+            <h1>Best Solution for Your Dream</h1>
+            <p>Architecture with the different concept from the others.</p>
+        </div>
+        <div class="solutionContent">
+            <div class="solutions">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeAZB6STqg3cfpgfu_pY-ickmtL3j09BLvw&usqp=CAU" alt="">
+                <h1>Functional Spaces</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatem!</p>
+            </div>
+            <div class="solutions">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeAZB6STqg3cfpgfu_pY-ickmtL3j09BLvw&usqp=CAU" alt="">
+                <h1>Architecture & interior design</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatem!</p>
+            </div>
+            <div class="solutions">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeAZB6STqg3cfpgfu_pY-ickmtL3j09BLvw&usqp=CAU" alt="">
+                <h1>Concept drawings</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatem!</p>
+            </div>          
+        </div>
+    </div>
+   </main>
+</body>
+</html>

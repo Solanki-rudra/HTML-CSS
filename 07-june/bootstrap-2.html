@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .col li:hover{
+            background-color: rgba(128, 128, 128, 0.405);
+        }
+        .home-menu>.row,.pages-menu>.row,.blog-menu>.col,.docs-menu>.col{
+            top: 80%;
+            background-color: #fff;
+            z-index: 2;
+            display: none;
+        }
+        .home-menu:hover>.row{
+            display: flex;
+        }
+        .pages-menu:hover>.row{
+            display: flex;
+        }
+        .blog-menu:hover>.col{
+            display: flex;
+        }
+        .docs-menu:hover>.col{
+            display: block;
+        }
+        .docs-menu .row:hover{
+            background-color: rgba(128, 128, 128, 0.245);
+            cursor: pointer;
+        }
+        .docs-menu>.col{
+            right: 8%;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="py-1 position-relative ">
+        <nav class="navbar bg-body-light ">
+            <div class="container d-flex justify-content-between">
+              <a class="navbar-brand col-2"><img src="https://htmlstream.com/preview/space-v2.3.1/assets/svg/logos/logo.svg" alt=""></a>
+              <button class="navbar-toggler d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+             <div class="col10 d-none d-lg-flex">
+                <ul class="navbar-nav d-flex flex-row border-end">
+                    <li class="nav-item px-4 home-menu">
+                      <a class="nav-link active" aria-current="page" href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                      <div class="row px-3 py-5 position-absolute tstart-50 shadow-lg rounded">
+                        <div class="col">
+                            <h4 class="fs-6 disabled text-secondary pe-5 ps-2">CLASSIC</h4>
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">service</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                            </UL>
+                        </div>
+                        <div class="col">
+                            <h4 class="fs-6 disabled text-secondary pe-5 ps-2">CLASSIC</h4>
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Growth</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">SaaS</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Wallet</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Api</a></li>
+                            </UL>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item px-4 pages-menu">
+                      <a class="nav-link active" aria-current="page" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                      <div class="row px-3 py-5 position-absolute start-50 shadow-lg rounded">
+                        <div class="col">
+                            <h4 class="fs-6 disabled text-secondary pe-5 ps-2">CLASSIC</h4>
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">service</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                            </UL>
+                        </div>
+                        <div class="col">
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">service</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                            </UL>
+                        </div>
+                        <div class="col">
+                            <h4 class="fs-6 disabled text-secondary pe-5 ps-2">CLASSIC</h4>
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">service</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                            </UL>
+                        </div>
+                        <div class="col">
+                            <h4 class="fs-6 disabled text-secondary pe-5 ps-2">CLASSIC</h4>
+                            <UL class="p-0">    
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">service</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                                <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Business</a></li>
+                            </UL>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item px-4 blog-menu">
+                      <a class="nav-link active" aria-current="page" href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                      <div class="col position-absolute px-3 py-2 shadow-lg rounded">
+                        <uL class="p-0">    
+                            <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Corporate</a></li>
+                            <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Agency</a></li>
+                            <li class="list-group-item pe-5 ps-2 my-1 rounded"><a class="nav-link text-decoration-none text-dark" href="#">Consulting</a></li>
+                        </uL>
+                      </div>
+                    </li>
+                    <li class="nav-item px-4 docs-menu">
+                      <a class="nav-link active" aria-current="page" href="#">Docs <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="col position-absolute px-4 py-3 shadow-lg rounded">
+                            <div class="row py-2 pb-0 rounded">
+                                <div class="col-1">
+                                    <i class="fa-solid fa-book" style="color: #005C45; font-size: 25px;"></i>
+                                </div>
+                                <div class="col-11">
+                                    <h6>Documentation <span class="bg-success rounded-pill text-light p-1 ">v2.3.1</span></h6>
+                                    <p>Development guide for building projects with space</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row py-2 pb-0 rounded">
+                                <div class="col-1">
+                                    <i class="fa-solid fa-book" style="color: #005C45; font-size: 25px;"></i>
+                                </div>
+                                <div class="col-11">
+                                    <h6>Snippets</h6>
+                                    <p>Development guide for building projects with space</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">           
+                    <button class="btn btn-outline-success border-0 mx-2" type="submit">Login</button>
+                    <button class="btn btn-success" type="submit"><i class="fa-regular fa-circle-user"></i> Sign up</button>
+                  </form>
+             </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="bg-success">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col">
+                        <h1>Solving problems for every <span>startup.</span></h1>
+                        <p>Built on standard web technology, teams use Space to build beautiful cross-platform hybrid apps in a fraction of the time.</p>
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-solid fa-comments fa-rotate-90 col-1"></i>
+                                <div class="col-3">
+                                    <h6>24 hours</h6>
+                                    <p>Response time</p>
+                                </div>                          
+                            </div>
+                            <div class="col">
+                                <i class="fa-solid fa-comments fa-rotate-90 col-1"></i>
+                                <div class="col-3">
+                                    <h6>92%</h6>
+                                    <p>Satisfaction rate</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col bg-light rounded p-4">
+                        <div class="row align-items-center ">
+                            <div class="col-9">
+                                <h6 class="fs-4">Join Space</h6>
+                                <p class="fs-5">Hundreds of companies using Space to build their business.</p>
+                            </div>
+                            <div class="col-3 w-25">
+                                <img class="img-fluid" src="https://htmlstream.com/preview/space-v2.3.1/assets/svg/illustrations/oc-chatting.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="name">Your name</label>
+                            <input class="p-2 fs-5" type="text" placeholder="Type your name" id="name">
+                        </div>
+                        <div class="row">
+                            <label for="email">Your email</label>
+                            <input class="p-2 fs-5" type="text" placeholder="example@site.com   " id="name">
+                        </div>
+                        <div class="row">
+                            <label for="radio">Company Size</label>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="radio" name="size" id="radio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row"></div>
+            </div>
+        </section>  
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

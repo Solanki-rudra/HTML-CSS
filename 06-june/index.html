@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <title>Profile</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #F9FDFE;
+}
+main{
+    padding: 20px;
+}
+.profile-container,.personal-info-container,.profesional-info-wrap{
+    padding-block: 20px;
+}
+.profile-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+.arrow-svg-wrap,.pen-icon-wrap{
+    width: 18px;
+    height: 18px;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+.person-box,.personal-info-box{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 10px rgba(110, 110, 110, 0.1);
+    padding: 20px;
+}
+.person-details-head{
+    display: flex;
+    justify-content: space-between;
+}
+.person-img-wrap{
+    width: 90px;
+    height: 90px;
+}
+img{
+    border: 4px solid rgb(125, 125, 253);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.person-name-wrap>h2{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.person-name-wrap>h3{
+    font-size: 13px;
+    color: gray;
+}
+.person-btn-wrap{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    padding: 12px 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    box-shadow: 1px 1px 5px 5px rgba(16, 112, 229, 0.058);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile-btn{
+    color: white;
+    background-color: rgb(125, 125, 253);
+}
+.general-info-btn{
+    background-color: rgba(104, 159, 248, 0.308);
+}
+.pers-info-head{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+h4{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+input,select,.upload-wraper{
+    border:none;
+    background-color: rgba(168, 238, 238, 0.356);
+    padding:15px 10px;
+    border-radius: 5px;
+}
+.upload-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.upload-btn{
+    width: fit-content;
+    padding:5px 10px;
+    font-size: 12px;
+    color: rgb(80, 127, 235);
+}
+.w-100{
+    width: 100%;
+}
+.btn-save{
+    background-color:rgb(80, 127, 235);
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin-block: 15px;
+}
+p{
+    font-size: 12px;
+    color: gray;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="profile-container">
+            <div class="profile-heading">
+                <div class="arrow-svg-wrap">
+                    <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#7277f8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="#3389e6"></path></g></svg>
+                </div>
+                <h2>My Profile</h2>
+            </div>
+            <div class="person-box">
+                <div class="person-details-head">
+                    <div class="person-img-wrap">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQP7ARHenfnGXcxCIhmDxObHocM8FPbjyaBg&usqp=CAU" alt="">
+                    </div>
+                    <div class="person-name-wrap">
+                        <h2>Dr Bhaskar Sharma</h2>
+                        <h3>DRID A57601</h3>
+                    </div>
+                    <div class="pen-icon-wrap">
+                        <svg width="64px" height="64px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>pen [#1319]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -2319.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M138.229706,2163.463 L139.648153,2161.977 L141.070621,2163.466 L139.651169,2164.952 L138.229706,2163.463 Z M127.920583,2177.236 L126.498115,2175.747 L136.808243,2164.952 L138.229706,2166.44 L127.920583,2177.236 Z M139.821061,2159 L124,2175.747 L124,2179 L127.920583,2179 L144,2162.859 L139.821061,2159 Z" id="pen-[#1319]"> </path> </g> </g> </g> </g></svg>
+                    </div>
+                </div>
+                <div class="person-btn-wrap">
+                    <button class="profile-btn btn">Doctor profile</button>
+                    <button class="general-info-btn btn">General Information</button>
+                </div>
+            </div>
+        </div>
+        <div class="personal-info-container">
+            <div class="pers-info-head">
+                <h2>Personal Information</h2>
+            </div>
+            <div class="personal-info-box">
+                <div class="title-wrap">
+                    <h4>Title</h4>
+                    <select name="title" id="title">
+                        <option value="">Dr</option>
+                        <option value="">Prof.</option>
+                    </select>
+                </div>
+                <div class="fname-wrap">
+                    <label for="fname"><h4>First Name</h4></label>
+                    <input type="text" name="" placeholder="Enter your first name" id="fname" class="w-100">
+                </div>
+                <div class="lname-wrap">
+                    <label for="lname"><h4>Last Name</h4></label>
+                    <input type="text" name="" placeholder="Enter your last name" id="lname" class="w-100">
+                </div>
+                <div class="email-wrap">
+                    <label for="email"><h4>Email</h4></label>
+                    <input type="text" name="" placeholder="example@gmail.com" class="w-100" id="email">
+                </div>
+                <div class="gender-wrap">
+                    <h4>Gender</h4>
+                    <div class="radio-box-wrap">
+                       <input type="radio" name="gender" id="male">
+                       <label for="male">Male</label>
+                       <input type="radio" name="gender" id="female">
+                       <label for="female">female</label>
+                       <input type="radio" name="gender" id="Others">
+                       <label for="Others">Others</label>
+                    </div>
+                </div>
+                <div class="mobile-num-wrap">
+                    <label for="mNumber"><h4>Mobile Number</h4></label>
+                    <div class="m-number-wraper w-100" style="display: flex;gap: 10px;">
+                        <select name="" id="">
+                            <option value="">+91</option>
+                            <option value="">+44</option>
+                        </select>
+                        <input type="number" placeholder="0000000000" class="w-100">
+                    </div>
+                </div>
+                <div class="date-birth-wrap">
+                    <label for="date"><h4>Date of Birth</h4></label>
+                    <input type="date" id="date" class="w-100">
+                </div>
+                <div class="address-wrap">
+                    <label for="address"><h4>Address</h4></label>
+                    <input type="text" id="address" class="w-100" placeholder="Building name, street name,...">
+                </div>
+                <div class="state-wrap">
+                    <label for="state"><h4>Address</h4></label>
+                    <select name="" id="state" class="w-100">
+                        <option value="">Select your state</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Maharastra</option>
+                    </select>
+                </div>
+                <div class="city-wrap">
+                    <label for="City"><h4>City</h4></label>
+                    <select name="" id="City" class="w-100">
+                        <option value="">Select your city</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Surat</option>
+                    </select>
+                </div>
+                <div class="pincode-wrap">
+                    <label for="pin"><h4>Pin Code</h4></label>
+                    <input type="number" placeholder="Enter your pin code" id="pin" class="w-100">
+                </div>
+                <div class="aadhar-card-wrap">
+                    <h4>Aadhar Card</h4>
+                    <div class="upload-wraper">
+                        <p>Upload your aadhar card</p>
+                        <button class="btn upload-btn">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profesional-info-wrap">
+            <div class="pers-info-head">
+                <h2>Professional Information</h2>
+            </div>
+            <div class="personal-info-box">
+                <div class="reg-id-wrap">
+                    <label for="regId"><h4>Registration id</h4></label>
+                    <input type="text" name="" placeholder="Enter your Registration Id" id="regId" class="w-100">
+                </div>
+                <div class="year-wrap">
+                    <label for="year"><h4>Year of Registration</h4></label>
+                    <select name="" id="year" class="w-100">
+                        <option value="">YYYY</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                    </select>
+                </div>
+                <div class="pname-wrap">
+                    <label for="pname"><h4>Parent's name</h4></label>
+                    <input type="text" name="" placeholder="Enter your Parent's name" id="pname" class="w-100">
+                </div>
+                <div class="regi-doc-wrap">
+                    <h4>Registration Document</h4>
+                    <div class="upload-wraper">
+                        <p>Upload your registration document</p>
+                        <button class="btn upload-btn">Upload</button>
+                    </div>
+                </div>
+                <div class="state-medi-wrap">
+                    <label for="medi"><h4>State medical council</h4></label>
+                    <select name="" id="medi" class="w-100" >
+                        <option value="">State medical council</option>
+                        <option value="">Gujrat</option>
+                        <option value="">Maharastra</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-save">SAVE</button>
+    </main>
+</body>
+</html>

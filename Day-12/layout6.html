@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.mainContainer{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        div.box1{
+            border: 1px solid black;
+            margin:0.5%;
+            width: 99%;
+            height: 98%;
+            background-color: rgb(239, 219, 182);
+        }
+        p.pl{
+            text-align: center;
+            padding: 0.6%;
+            background-color: rgb(237, 147, 147);
+            border-bottom: 1px solid black;
+        }
+        div.pl1{
+            padding: 0.5%;
+            display: flex;
+            height: 95.5%;
+        }
+        div.pc1 {
+            border: 1px solid black;
+            height: 100%;
+            width: 16.66%;
+            background-color: rgb(159, 187, 247);
+        }
+        p.pc{
+         text-align: center;
+            padding: 4%;
+            background-color: rgb(141, 141, 243);
+            border-bottom: 1px solid black;  
+        }
+        div.midpl{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            margin: 0.03% 0.5%
+        }
+        div.pc3{
+            height: 20%;
+            margin: 0.7%;
+            border: 1px solid black;
+        }
+        p.mh{
+            height: 20%;
+        }
+        p.pcm{
+            text-align: center;
+            padding: 1%;
+            background-color: rgb(141, 141, 243);
+            border-bottom: 1px solid black;  
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="box1">
+            <p class="pl">Panel Layout 1 - Left to Right</p>
+            <div class="pl1">
+                <div class="pc1">
+                    <p class="pc">Panel Card 1</p>
+                </div>
+                <div class="midpl">
+                    <p class="pl">Panel Layout 2 - Top to Bottom(Fixed Width)</p>
+                    <div class="midRow">
+                        <div class="pc3">
+                            <p class="pcm">Panel Card 3</p>
+                            <p class="mh">(Masthead)</p>
+                        </div>
+                        <div class="coreLp">
+                            <p class="pl">Panel Layout 3 - Left to Right</p>
+                        </div>
+                        <div class="pc7">
+                            <p class="pcm">Panel Card 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc1">
+                    <p class="pc">Panel Card 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

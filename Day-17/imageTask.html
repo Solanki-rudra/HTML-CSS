@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: skyblue;
+            overflow: hidden;
+        }
+        .mainContainer{
+            height: 80%;
+            width: 90%;
+            display: flex;
+            gap: 0.5%;
+        }
+        .box1{
+            height: 100%;
+            width: 50%;
+            position: relative;
+        }
+        .box2{
+            width: 50%;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1%;
+        }
+        .item{
+            width: 49%;
+            height: 49.5%;
+            position: relative;
+            font-size: 10px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .details{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+            padding: 20px;
+        }
+        button{
+            background-color:rgb(77, 193, 239);
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 2em;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        h2{
+            font-size: 12px;
+            margin: 10px 0;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="box1">
+            <img src="eximage.jpg" alt="">
+            <div class="details">
+                <button>FRIENDS</button>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <h2>John Doe Apr 28, 2017</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="item">
+                <img src="eximage.jpg" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>Apr 28, 2017</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="eximage.jpg" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>Apr 28, 2017</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="eximage.jpg" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>Apr 28, 2017</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="eximage.jpg" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>Apr 28, 2017</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

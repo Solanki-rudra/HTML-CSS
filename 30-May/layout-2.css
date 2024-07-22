@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.main-container{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 98.9vw;
+    display: flex;
+    flex-direction: column;
+}
+.today-container{
+    display: flex;
+    flex-direction: column;
+}
+.today-container>h1,.yesterday-container>h1{
+    font-size: 14px;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    background-color: rgba(222, 218, 218, 0.408);
+}
+.content-wraper{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 194, 194);
+}
+.price-groth-wraper{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+}
+.grouth-icon{
+    width: 20px;
+    height: 20px;
+}
+.grouth-icon>svg{
+    width: 100%;
+    height: 100%;
+}
+.price-wraper>h2,.mid-det-wraper>h2,.transaction-wraper>h2,.last-invoice-wrap>h3,.amount-wrap>h3{
+    font-size: 15px;
+    text-align: start;
+    font-weight: 400;
+}
+.price-wraper>h3,.mid-det-wraper>h3,.transaction-wraper>h3{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+}
+.mid-det-wraper{
+    width: 30%;
+}
+.transaction-wraper>h2{
+    color: blue;
+}
+.transaction-wraper{
+    text-align: end;
+}
+.prc-status{
+    color: rgb(64, 178, 64);
+    border: 1px solid lightgreen;
+    font-size: 12px;
+    background-color: rgba(175, 248, 175, 0.518);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+.prc-status-wit{
+    color: black;
+    border: 1px solid gray;
+    background-color: rgba(231, 228, 228, 0.415);
+}
+.prc-status-ovr{
+    color: red;
+    border: 1px solid red;
+    background-color: rgba(244, 141, 141, 0.203);
+}
+.recent-clients-container{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.recent-head-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.recent-head-wrap>h3{
+    font-size: 16px;
+}
+.recent-head-wrap>a{
+    font-size: 16px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.client-item-wrap{
+    padding: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+.client-item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid gray;
+    flex: 1;
+}
+.item-head{
+    padding: 25px;
+    background-color: rgba(209, 207, 207, 0.585);
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-name-wrap{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.image-name-wrap>h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.dots{
+    width: 15px;
+    height: 15px;
+}
+.dots>svg{
+    width: 100%;
+    height: 100%;
+}
+.item-details{
+    padding: 25px;
+}
+.last-invoice-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.amount-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.prc-st-wra{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.prc-st-wra>h3{
+    font-size: 15px;
+    font-weight: 400;
+}

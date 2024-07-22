@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 38, 75);
+    height: 100vh;
+    font-family: sans-serif;
+}
+.main-container{
+    display: flex;
+    width: 90%;
+    height: 70%;
+    gap: 10px;
+}
+.image{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgba(63, 62, 62, 0.452);
+    border: 5px solid rgb(55, 54, 54);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.image:hover{
+    width: 100%;
+}
+.image::after{
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 25px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+}
+.image:nth-child(1)::after{
+    content: 'Explore the world of bird';
+}
+.image:nth-child(2)::after{
+    content: 'Explore the world of mountains';
+}
+.image:nth-child(3)::after{
+    content: 'Explore the world of animals';
+}
+.image:nth-child(4)::after{
+    content: 'Explore the world of water';
+}
+.image:nth-child(5)::after{
+    content: 'Explore the world of nature';
+}
+.image:hover::after{
+    opacity: 1;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+}

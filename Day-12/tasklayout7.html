@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* overflow: hidden; */
+        }
+        header{
+            height: 8vh;
+            box-shadow: 0 2px 2px 1px rgb(225, 222, 222);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.2%;
+            transition: 0.5s;
+        }
+        header:hover{
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+        }
+        nav{           
+            min-width:80%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a.logo{
+            font-size: 30px;
+            font-weight: bolder;
+            letter-spacing: 0.1px;
+        }  
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li>a{
+            font-weight: bold;
+            color: gray;
+            font-size: 13px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        li> a:hover{
+            color: hotpink;
+            font-weight: bold;
+            padding-bottom: 5px;
+            border-bottom: 3px solid hotpink;
+        }
+        button{
+            height:50%;
+            width:9%;
+            border: none;
+            background-color: lightblue;
+            border-radius: 4px;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: rgb(245, 154, 199);
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+        }
+        .middle{
+            height: 89vh;
+            display: flex;
+            justify-content:center;
+        }
+        .mainContainer{
+            width: 80%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            gap: 1.5%;
+        }
+        .item{
+            height: 100%;
+            display: flex;
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition: 0.5s;
+        }
+        .item:hover{
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+            scale:  104%;         
+        }
+        .img{
+            height: 85%;
+        }
+        .det{
+            margin: 10px;
+            font-size: 10px;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            margin: 5px;
+        }
+        p.prc{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <HEADER>
+        <nav>
+            <a href="#" class="logo">AVONE</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog </a></li>
+            </ul>
+            <button><a href="#">LOGIN</a></button>
+        </nav>
+    </HEADER>
+    <div class="middle">
+    <div class="mainContainer">
+        <div class="item">
+            <div class="img"><img src="./taskimg1.jpeg" alt=""></div>
+            <div class="det">
+            <p>BUTTON UP TOP WHITE</p>
+            <P class="prc">$800.00</P>
+         </div>
+        </div>
+        <div class="item">
+            <div class="img"><img src="./taskimg2.jpeg" alt=""></div>
+            <div class="det">
+            <p>CASUAL INDIGO SHIRT</p>
+            <P class="prc">$300.00</P>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img"><img src="./taskimg3.jpeg" alt=""></div>
+            <div class="det">
+            <p>EMOTION MINI DRESS</p>
+            <P class="prc">$100.00</P>
+        </div>
+        </div>
+        <div class="item">
+            <div class="img"><img src="./taskimg4.jpeg" alt=""></div>
+            <div class="det">
+            <p>WOMEN YOGA LEGGINGS GYM</p>
+            <P class="prc">$50.00</P>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

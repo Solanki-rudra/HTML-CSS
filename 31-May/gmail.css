@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.r-f-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.r-f-a-c{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color: #F6F8FC;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+}
+.leftside-nav-container{
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    background-color: #EAF1FB;
+    height: 100%;
+    width: fit-content;
+}
+.leftside-nav-container>abbr{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.leftside-nav-container>abbr:hover{
+    background-color: rgba(207, 204, 204, 0.427);
+}
+.mail-scg{
+    position: relative;
+}
+.mail-scg::before{
+    content: '8';
+    position: absolute;
+    padding:  2px 4px;
+    font-size: 11px;
+    top: -15%;
+    right: 15%;
+    border: 2px solid #EAF1FB;
+    font-weight: 600;
+    border-radius: 50%;
+    color: white;
+    background-color: #B3261E;
+}
+svg{
+    width: 60%;
+    height: 60%;
+}
+.left-nav-wraper{
+    padding: 20px 0;
+}
+.left-nav-icon-1{
+    background-color: #BACBE7;
+}
+.left-nav-icon{
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.left-nav-icon-2{
+    transition: 0.5s;
+}
+.left-nav-icon-2:hover{
+    background-color: rgba(207, 204, 204, 0.559);
+}
+.left-nav{
+    padding: 7px 0;
+}
+.left-nav-icon>svg{
+    width: 60%;
+    height: 60%;
+}
+.left-nav>h3{
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+    padding: 3px 0;
+}
+.mid-main-container{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wraper{
+    padding:0 15px;
+    width: 17%;
+}
+.side-header{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchbox-wraper{
+    width: 60%;
+    display: flex;
+    background-color: #EAF1FB;
+    align-items: center;
+    border-radius: 80px;
+}
+.searchbox-wraper:hover{
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.searchbox-wraper:hover>input{
+    background-color: #fff;
+}
+.search-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+input[type="text"]{
+    border: none;
+    background-color: #EAF1FB;
+    font-size: 17px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+.right-header-wrap{
+    display: flex;
+}
+.active-wraper>svg{
+    height: 15px ;
+    width: 15px;
+}
+.active-wraper{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #EAF1FB;
+    display: flex;
+    cursor: pointer;
+}
+.active-wraper:hover{
+    background-color: #e2edfc;
+}
+.active-wraper>h4{
+    font-size: 14px;
+    margin: 0 8px;
+}
+.g-account-wraper{
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 8px;
+    padding:5px ;
+    cursor: pointer;
+}
+.g-account-wraper:hover{
+    background-color: #EAF1FB;
+}
+.acount-img>img{
+    border-radius: 50%;
+}
+.right-header-wrap>abbr{
+    height: 40px;
+    margin: 0 5px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.right-header-wrap>abbr:hover{
+    background-color: rgba(192, 187, 187, 0.274);
+}
+.g-account-wraper>h2{
+   color: #5F6368;
+}
+main{
+    display: flex;
+}
+.extra-option-bar{
+    width: 17%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.compose-wraper{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    background-color: #C2E7FF;
+    border-radius: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.compose-wraper:hover{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+}
+.compose-svg{
+    height: 30px;
+    width: 30px;
+}
+.compose-svg>svg{
+    width: 80%;
+    height: 80%;
+}
+.compose-wraper>h3{
+    font-size: 15px;
+    font-weight: 100;
+}
+.option-wraper{
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.options{
+    width: 100%;
+    gap: 10px;
+    padding:6.5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.options:first-child{
+    background-color: #D3E3FD;
+    color: black;
+    position: relative;
+}
+.options>h3{
+    font-weight: 400;
+}
+.options:hover{
+    background-color: rgba(128, 128, 128, 0.17);
+}
+.options:first-child::after{
+    content: '8';
+    position:absolute;
+    right: 5%;
+    font-weight: 600;
+}
+.opt-svg{
+    width: 20px;
+    height: 20px;
+}
+.opt-svg>svg{
+    width: 100%;
+    height: 100%;
+}
+.label-wraper{
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px ;
+}
+.label-wraper>h2{
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(68, 67, 67);
+}
+.plus-icon{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.plus-icon:hover{
+    background-color: rgba(128, 128, 128, 0.273);
+}
+.plus-icon>svg{
+    width: 70%;
+    height: 70%;
+}
+.mail-box-wraper{
+    width: 82.25%;
+    height: 90vh;
+    border-radius: 20px;
+    background-color: #F2F6FC;
+    display: flex;
+    flex-direction: column;
+}
+.mail-box-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0 ;
+    padding:5px 20px;
+}
+.l-i-dots{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.l-i-dots:hover{
+    background-color: rgba(128, 128, 128, 0.101);
+
+}
+.l-i-dots>svg{
+    width: 50%;
+    height: 50%;
+}
+.check-detls-wrap{
+    border-radius: 5px;
+    padding: 10px 5px ;
+    border: 1px solid rgba(128, 128, 128, 0);
+}
+.check-detls-wrap:hover{
+    border: 1px solid rgba(128, 128, 128, 0.366);
+    background-color: #bdc0c398;
+
+}
+input[type='checkbox']{
+    height: 15px;
+    cursor: pointer;
+    width: 15px;
+}
+select{
+    cursor: pointer;
+    border: none;
+    background-color: #bdc0c300;
+}
+.right-icons{
+    opacity: 0.5;
+    font-size: 12px;
+}
+.mails-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-radius: 0 0 20px 20px;
+}
+.mail-item{
+    justify-content: space-between;
+    border-bottom: 1px solid #DADCE0;
+    padding:0 5px;
+    cursor: pointer;
+}
+.mail-item-2{
+    background-color: #fff;
+}
+.mail-item-2>.first-mail-part>.m-subject-wraper{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.first-mail-part{
+    width: 15%;
+}
+.m-select-wraper{
+    justify-content: space-between;
+    opacity: 0.5;
+}
+.six-dot{
+    height: 21px;
+    width: 21px;
+    opacity: 0;
+}
+.mail-item:hover .six-dot{
+    opacity: 1;
+}
+.mail-item:hover{
+    box-shadow: 2px 0.5px 2px 2px rgba(61, 61, 61, 0.3);
+}
+.mail-item:hover .m-select-wraper{
+    opacity: 1;
+}
+.six-dot>svg{
+    height: 80%;
+    width: 80%;
+}
+.m-star-wraper{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    opacity: 0.5;
+}
+.mail-item:hover .m-star-wraper{
+    opacity: 1;
+}
+.m-star-wraper:hover{
+    background-color: rgba(128, 128, 128, 0.252);
+}
+.m-star-wraper>svg{
+    height: 20px;
+    width: 20px;
+}
+.mail-item p{
+    font-size: 13px;
+}
+.m-subject-wraper>p{
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.mid-mail-part{
+    width: 70%;
+}
+.mail-item:hover>.mid-mail-part{
+    width: 62%;
+}
+.mail-item:hover>.last-mail-part{
+    width: 13%;
+}
+.mid-mail-part>p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.last-mail-part{
+    width: 5%;
+    padding-right: 10px;
+}
+.mail-item:hover .last-mail-part>p{
+    display: none;
+}
+.last-hidden-icon-wraper{
+    display: flex;
+    display: none;
+    opacity: 0.6;
+}
+.last-hidden-icon-wraper>abbr{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.last-hidden-icon-wraper>abbr:hover{
+    background-color: rgba(128, 128, 128, 0.271);
+}
+.last-hidden-icon-wraper>abbr>svg{
+    width: 50%;
+    height: 50%;
+}
+.mail-item:hover .last-mail-part>.last-hidden-icon-wraper{
+    display: block;
+    display: flex;
+}

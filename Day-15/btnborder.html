@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            height: 100vh;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            padding: 50px 90px;
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+            position: relative;
+            transition: 1s;
+            overflow: hidden;
+        }
+        .box::before{
+            content: '';
+            border-top: 6px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            transition: 1s;
+        }
+        .box::after{
+            content: '';
+            border-bottom: 6px solid black;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0%;
+            transition: 1s;
+        }
+        .box:hover::before{
+            width: 100%;
+        }
+        .box:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">HOVER ME</div>
+</body>
+</html>
